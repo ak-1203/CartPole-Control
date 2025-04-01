@@ -1,16 +1,16 @@
-# Deep Reinforcement Learning: Algorithms & Tile Coding
+#  Deep Reinforcement Learning on CartPole: DQN, A2C, PPO and Tile Coding
 
-This repository provides implementations of various Deep Reinforcement Learning (DRL) algorithms for solving OpenAI Gym's **CartPole-v1** environment. 
+This repository provides implementations of various Deep Reinforcement Learning (DRL) algorithms for solving OpenAI Gym's **CartPole-v1** environment.  
 
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0.0-red)](https://pytorch.org/)  
 [![Stable-Baselines3](https://img.shields.io/badge/Stable_Baselines3-2.1.0-blue)](https://stable-baselines3.readthedocs.io/)  
-It includes:
 
-- **Deep Q-Network (DQN)** and **Advantage Actor-Critic (A2C)** implemented from scratch using **PyTorch**.
-- **Proximal Policy Optimization (PPO)** using **Stable Baselines3**.
+### 🚀 Implementations Included:  
+- **Deep Q-Network (DQN)** and **Advantage Actor-Critic (A2C)** implemented from scratch using **PyTorch**.  
+- **Proximal Policy Optimization (PPO)** using **Stable Baselines3**.  
 - **Q-Learning with Tile Coding** for handling continuous state spaces.  
 
-## 📌 Key Features
+---
 
 ## 📌 Key Features  
 
@@ -22,6 +22,9 @@ It includes:
 
 ---
 
+<div align="center">
+  <img src="Tile-Coding/training.gif" width="40%">
+</div>
 
 ### 🔹 **Scratch Implementations (PyTorch)**
 - **Deep Q-Network (DQN)**  
@@ -47,38 +50,48 @@ It includes:
   - **Learning Rate:** Adaptive schedule (0.5 → 0.1).  
   - **Discount Factor:** γ = 0.99.  
 
+---
+## 📈 Training Progress  
 
-## 📈 Training Progress
+Below are the training and testing performance graphs for different reinforcement learning algorithms. All plots are scaled uniformly for a clean and professional appearance.
 
-### 🔹 Q-Learning with Tile Coding  
-![Tile Coding - Training](DRL-Algorithms-in-Cartpole-Environment/Tile-Coding/cartpole_tilecoding/Training_Progress.png)  
-![Tile Coding - Testing](DRL-Algorithms-in-Cartpole-Environment/Tile-Coding/cartpole_tilecoding/Testing_Progress.png)  
+### 🔹 **Q-Learning with Tile Coding**  
+<div align="center">
+  <img src="Tile-Coding/cartpole_tilecoding/Training_Progress.png" alt="Tile Coding - Training" width="48%">
+  <img src="Tile-Coding/cartpole_tilecoding/Testing_Progress.png" alt="Tile Coding - Testing" width="48%">
+</div>  
 
-### 🔹 Deep Q-Network (DQN)  
-![DQN - Training](DRL-Algorithms-in-Cartpole-Environment/DQN/dqn_training.png)  
-![DQN - Testing](DRL-Algorithms-in-Cartpole-Environment/DQN/dqn_testing.png)  
+### 🔹 **Deep Q-Network (DQN)**  
+<div align="center">
+  <img src="DQN/dqn_training.png" alt="DQN - Training" width="48%">
+  <img src="DQN/dqn_testing.png" alt="DQN - Testing" width="48%">
+</div>  
 
-### 🔹 Advantage Actor-Critic (A2C)  
-![A2C - Training](DRL-Algorithms-in-Cartpole-Environment/A2C/a2c_training.png)  
-![A2C - Testing](DRL-Algorithms-in-Cartpole-Environment/A2C/a2c_testing.png)  
+### 🔹 **Advantage Actor-Critic (A2C)**  
+<div align="center">
+  <img src="A2C/a2c_train.png" alt="A2C - Training" width="48%">
+  <img src="A2C/a2c_testing.png" alt="A2C - Testing" width="48%">
+</div>  
 
-### 🔹 Proximal Policy Optimization (PPO)  
-![PPO - Training](DRL-Algorithms-in-Cartpole-Environment/PPO/ppo_training.png)  
-![PPO - Testing](DRL-Algorithms-in-Cartpole-Environment/PPO/ppo_testing.png)  
+### 🔹 **Proximal Policy Optimization (PPO)**  
+<div align="center">
+  <img src="PPO/ppo_training.png" alt="PPO - Training" width="60%">
+</div>
+<div align="center">
+  <img src="PPO/ppo_testing.png" alt="PPO - Testing" width="60%">
+</div>
 
-## 🛠 Quick Start  
-1. **Install dependencies**: 
-gymnasium==0.29.1  
-numpy==1.26.0  
-matplotlib==3.8.0  
-pandas==2.1.1  
-tqdm==4.66.1   
-stable-baselines3==2.1.0   
-torch==2.0.0   
+## 🛠 Installation  
 
-## Future Uploads
+To get started, clone this repository and install dependencies:
+
+```bash
+git clone https://github.com/ak-1203/DRL-Algorithms-in-Cartpole-Environment
+
+pip install gymnasium numpy matplotlib pandas tqdm stable-baselines3 torch
+```
+
+## 🚀 Planned Updates
 - Implement Soft Actor-Critic (SAC) for continuous action spaces.
 - Extend tile coding to other environments like MountainCar.
 - Experiment with different network architectures for A2C and PPO
-
-
