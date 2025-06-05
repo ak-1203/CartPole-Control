@@ -5,14 +5,14 @@ This repository provides implementations of various Deep Reinforcement Learning 
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0.0-red)](https://pytorch.org/)  
 [![Stable-Baselines3](https://img.shields.io/badge/Stable_Baselines3-2.1.0-blue)](https://stable-baselines3.readthedocs.io/)  
 
-### 🚀 Implementations Included:  
+###  Implementations Included:  
 - **Deep Q-Network (DQN)** and **Advantage Actor-Critic (A2C)** implemented from scratch using **PyTorch**.  
 - **Proximal Policy Optimization (PPO)** using **Stable Baselines3**.  
 - **Q-Learning with Tile Coding** for handling continuous state spaces.  
 
 ---
 
-## 📌 Key Features  
+##  Key Features  
 
 | **Category**               | **Algorithms**          | **Key Improvements**                          |
 |----------------------------|-------------------------|-----------------------------------------------|
@@ -91,7 +91,7 @@ git clone https://github.com/ak-1203/DRL-Algorithms-in-Cartpole-Environment
 pip install gymnasium numpy matplotlib pandas tqdm stable-baselines3 torch
 ```
 
-## 🚀 Planned Updates
+##  Planned Updates
 - Implement Soft Actor-Critic (SAC) for continuous action spaces.
 - Extend tile coding to other environments like MountainCar.
 - Experiment with different network architectures for A2C and PPO
