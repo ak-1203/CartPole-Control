@@ -1,14 +1,27 @@
 #  Deep Reinforcement Learning on CartPole: DQN, A2C, PPO and Tile Coding
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0.0-red)](https://pytorch.org/)  [![Stable-Baselines3](https://img.shields.io/badge/Stable_Baselines3-2.1.0-blue)](https://stable-baselines3.readthedocs.io/)  
 
-This repository provides implementations of various Deep Reinforcement Learning (DRL) algorithms for solving OpenAI Gym's **CartPole-v1** environment.  
+##  Introduction:
+CartPole is a classical control problem in Reinforcement Learning, also known as the Inverted Pendulum problem.
 
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0.0-red)](https://pytorch.org/)  
-[![Stable-Baselines3](https://img.shields.io/badge/Stable_Baselines3-2.1.0-blue)](https://stable-baselines3.readthedocs.io/)  
+### Problem Statement:
+Imagine a cart that can move left or right along a track. A pole is attached to the cart via a hinge at its base. The objective is to apply forces to the cart — either left or right — in order to keep the pole balanced upright for as long as possible without it falling over.
 
-###  Implementations Included:  
+This environment is widely used as a benchmark to test and compare reinforcement learning algorithms due to its simplicity and dynamic behavior.
+In this repository, I share my implementation and analysis of various Deep Reinforcement Learning (DRL) algorithms applied to OpenAI Gym's **CartPole-v1** environment. 
+
+
+##  Implementations Included:  
 - **Deep Q-Network (DQN)** and **Advantage Actor-Critic (A2C)** implemented from scratch using **PyTorch**.  
 - **Proximal Policy Optimization (PPO)** using **Stable Baselines3**.  
 - **Q-Learning with Tile Coding** for handling continuous state spaces.  
+
+---
+
+<div align="center">
+  <img src="Tile-Coding/training.gif" width="40%">
+   <p><em>Training visualization of agent on CartPole-v1</em></p>
+</div>
 
 ---
 
@@ -21,10 +34,6 @@ This repository provides implementations of various Deep Reinforcement Learning 
 | **Discretization**         | Q-Learning + Tile Coding| 4 tilings, adaptive ε-greedy, state aggregation |
 
 ---
-
-<div align="center">
-  <img src="Tile-Coding/training.gif" width="40%">
-</div>
 
 ### 🔹 **Scratch Implementations (PyTorch)**
 - **Deep Q-Network (DQN)**  
@@ -86,7 +95,7 @@ Below are the training and testing performance graphs for different reinforcemen
 To get started, clone this repository and install dependencies:
 
 ```bash
-git clone https://github.com/ak-1203/DRL-Algorithms-in-Cartpole-Environment
+git clone https://github.com/ak-1203/CartPole-Control
 
 pip install gymnasium numpy matplotlib pandas tqdm stable-baselines3 torch
 ```
